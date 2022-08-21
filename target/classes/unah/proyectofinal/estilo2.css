@@ -1,0 +1,28 @@
+#ROOTNODE {
+    -fx-background-radius: 30;
+    -fx-background-color: rgba(24, 24, 24,0.9);
+}
+.button {
+    -fx-background-color: rgba(100, 100, 100,0.9);
+    -fx-text-fill: rgb(240, 240, 240);
+}
+
+.label {
+    -fx-text-fill: rgb(240, 240, 240);
+}
+
+.text-field {
+    -fx-background-color: rgba(100, 100, 100,0.9);
+    -fx-text-fill: rgb(240, 240, 240);
+}
+#ROOTNODE2 {
+    -fx-background-radius: 30;
+    -fx-background-color: rgba(24, 24, 24,1);
+}
+
+#sentButton{
+    -fx-background-color: rgba(40, 83, 153,0.6);
+}
+#DeleteButton{
+    -fx-background-color: rgba(166, 61, 61,0.6);
+}

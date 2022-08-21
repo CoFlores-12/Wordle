@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ROOTNODE2" prefHeight="300.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unah.proyectofinal.otherClass.WinnerScreen">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="300.0" prefWidth="320.0" spacing="10.0">
+         <children>
+            <ImageView fx:id="imageInfo" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin></ImageView>
+            <Label fx:id="textInfo" text="Text Info" textFill="#087500">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="wordLabel" text="La plabra era: ">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Button mnemonicParsing="false" onAction="#closeButtonClick" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #6b0a0a; -fx-text-fill: rgb(240, 240, 240);" text="SALIR" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

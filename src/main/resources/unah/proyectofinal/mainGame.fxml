@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ROOTNODE" prefHeight="500.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unah.proyectofinal.otherClass.MainGameController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="320.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="320.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#buttonMenuClick" text="Menu">
+                     <HBox.margin>
+                        <Insets right="32.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label text="Proyecto Final IS-210 1800">
+                     <HBox.margin>
+                        <Insets right="53.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="closeButton" mnemonicParsing="false" onAction="#closeButtonAction" text="X">
+                     <font>
+                        <Font name="Arial Bold" size="10.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="16.0" />
+               </padding>
+            </HBox>
+            <Pane prefHeight="335.0" prefWidth="320.0">
+               <children>
+                  <Pane layoutX="34.0" layoutY="52.0" prefHeight="276.0" prefWidth="252.0" style="-fx-border-color: grey; -fx-border-radius: 30;">
+                     <children>
+                        <GridPane fx:id="wordsGrid" hgap="5.0" layoutX="16.0" layoutY="13.0" style="-fx-border-radius: 60;" vgap="2.0">
+                          <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="40.0" prefWidth="40.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="40.0" prefHeight="40.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="40.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="40.0" valignment="CENTER" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Pane>
+                  <Label layoutX="91.0" layoutY="-5.0" text="WORDLE">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="110.0" prefWidth="320.0">
+               <children>
+                  <Pane layoutY="-2.0" prefHeight="114.0" prefWidth="320.0">
+                     <children>
+                        <GridPane fx:id="keyboardGrid1" alignment="CENTER" layoutX="20.0" layoutY="12.0" prefHeight="70.0" prefWidth="280.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="Q">
+                                 <GridPane.margin>
+                                    <Insets right="2.0" />
+                                 </GridPane.margin></Button>
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="W" GridPane.columnIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="E" GridPane.columnIndex="2" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="R" GridPane.columnIndex="3" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="T" GridPane.columnIndex="4" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="Y" GridPane.columnIndex="5" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="U" GridPane.columnIndex="6" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="I" GridPane.columnIndex="7" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="O" GridPane.columnIndex="8" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="P" GridPane.columnIndex="9" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="A" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="S" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="D" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="F" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="G" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="H" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="J" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="K" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="L" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="Ñ" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="keyboardGrid2" layoutX="12.0" layoutY="85.0" prefHeight="25.0" prefWidth="301.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="30.0" prefWidth="10.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="40.0" prefWidth="10.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="sentButton" mnemonicParsing="false" onAction="#sentClickButton" text="Enviar" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="Z" GridPane.columnIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="X" GridPane.columnIndex="2" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="C" GridPane.columnIndex="3" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="V" GridPane.columnIndex="4" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="B" GridPane.columnIndex="5" />
+                              <Button mnemonicParsing="false" onAction="#buttonClick" text="N" GridPane.columnIndex="6" />
+                              <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonClick" text="M" GridPane.columnIndex="7" />
+                              <Button fx:id="DeleteButton" mnemonicParsing="false" onAction="#buttonDeleteClick" prefWidth="50.0" text="Borrar" GridPane.columnIndex="8" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+               </children></Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

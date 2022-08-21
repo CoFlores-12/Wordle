@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ROOTNODE2" prefHeight="500.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unah.proyectofinal.otherClass.NoWords">
+   <children>
+      <Label layoutX="65.0" layoutY="192.0" text="Todas las palabras han sido jugadas" />
+      <Button layoutX="132.0" layoutY="304.0" mnemonicParsing="false" onAction="#exitButton" text="Aceptar" />
+      <Label layoutX="70.0" layoutY="242.0" text="Se reiniciaran las plabaras jugadas" />
+   </children>
+</AnchorPane>

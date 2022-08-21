@@ -1,0 +1,72 @@
+este proyecto fue creado con TextField
+los cuales se crean y agregan a un GridPane en
+otherClass.mainGameController::initialize
+
+este proyecto guarda la palabras y los intentos hechos por el jugador en el archivo
+"resources/files/gameRunning.txt", este archivo no se reiniciara al menos
+que exista una victoria o derrota
+
+cada palabra nueva que se juega se guarda en el archivo "resources/files/palabrasJugadas.txt"
+para ser descartada en proximas partidas
+el cual se reinicia al no quedar mas palabras para jugar
+con aviso previo al usuario del reinicio de palabras
+
+el archivo "resources/files/settings.txt" guarda la preferencia del tema
+
+si hay errores con las rutas de los archivos, verifique que la carpeta del proyecto sea la correcta
+
+REQ-1 Elaborado por Cesar Obeth Flores Flores 20201001034
+
+REQ-2 Elaborado en JavaFX
+
+REQ-3 el pryecto contiene 4 vantanas:
+        1) el main del juego "mainGame.fxml"
+        2) el menu donde muestra los integrantes "menu.fxml"
+        3) la ventana que muestra si el usuario gana o pierde "winnerScreen.fxml"
+        4) la ventana que muestra que las palabras del juego se han agotado "noWords.fxml"
+
+REQ-4 El tablero de intentos contiene 30 celdas que permiten mostrar los caracteres que selecciones
+      el usuario, se colorea el fondo al terminar el intento y se prohibe la modificacion de su texto
+      fuera de los controles previstos para ello
+
+REQ-5 El teclado para ingresar caracteres tambien se colorea al terminar el intento
+
+REQ-6 el archivo "src/main/resources/files/palabras.txt" no contiene palbras con letras repetidas
+
+REQ-7 el archivo "resources/files/palabras.txt" contiene > 10 palabras
+      estas cadenas se cargan con el metodo de otherClass.Words::LoadWords
+      y se guardan en un atributo de tipo ArrayList de la clase
+
+REQ-8 el metodo otherClass.Words::getWordRandom
+      determina si hay palabras disponibles cargadas en memoria,
+      si las hay, devuelve una aleatoria del ArrayList
+      si no las hay, mostrara que no hya palabras disponbles
+
+      *El metodo otherClass.Words::LoadWords determina si agrega la palabra al ArrayList
+      esto dependera en si la palabra esta o no en el archivo "palabrasJugadas.txt"
+
+REQ-9 No es necesario que se valide cada intento en un
+      diccionario para determinar si el conjunto de letras es
+      una palabra válida en el idioma español.
+
+REQ-10 Cada celda debe validar que no se escriba más de 1
+       carácter. No debe mostrarse ningún error pero no debe
+       ser posible colocar más de 1 letra. Debe definir que los
+       únicos valores válidos sean letras mayúsculas.
+
+REQ-11 en la linea 149 de la clase otherClass.mainGameController se valida que cuando
+       el atributo WordleApplication.indexRow==5, indique una derrota
+
+       y la linea 144 verifica que la palabra introducida sea igual a la de la partida
+       si es asi, mostrara la pantalla de victoria
+
+REQ-12 en la clase otherClass.mainGameController de la linea 122 a la 157
+       colorea el fondo de cada celda del intento y su caracter correspondiente en el teclado virtual
+
+REQ-13 Se presento un bosquejo previo de la aplicacion
+
+REQ-14 el proyecto contiene un teclado virtual con un conjunto de botones y el metodo
+       responsable de responder a los eventos click es otherClass.mainGameController::buttonClick
+
+REQ-15 una vez terminada la partida de juego, se termina la ejecucion del juego.
+
